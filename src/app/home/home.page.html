@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Casa
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="room-container">
+    <div class="room" [ngClass]="{'room-on': banio, 'room-off': !banio}">
+      <p>Baño</p>
+    </div>
+    <div class="room" [ngClass]="{'room-on': garaje, 'room-off': !garaje}">
+      <p>Garaje</p>
+    </div>
+    <div class="room" [ngClass]="{'room-on': cocina, 'room-off': !cocina}">
+      <p>Cocina</p>
+    </div>
+    <div class="room" [ngClass]="{'room-on': cuarto, 'room-off': !cuarto}">
+      <p>Cuarto</p>
+    </div>
+    <div class="room" [ngClass]="{'room-on': sala, 'room-off': !sala}">
+      <p>Sala</p>
+    </div>
+    <div class="room" [ngClass]="{'room-on': vestidor, 'room-off': !vestidor}">
+      <p>Vestidor</p>
+    </div>
+  </div>
+</ion-content>

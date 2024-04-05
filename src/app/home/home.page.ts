@@ -8,7 +8,7 @@ import { Database, object, ref } from '@angular/fire/database';
 })
 export class HomePage {
   banio: boolean = false;
-  garaje: boolean = false;
+  Garaje: boolean = false;
   cocina: boolean = false;
   cuarto: boolean = false;
   sala: boolean = false;
@@ -18,7 +18,7 @@ export class HomePage {
 
   ngOnInit() {
     this.subscribeToRoom('banio');
-    this.subscribeToRoom('garaje');
+    this.subscribeToRoom('Garaje');
     this.subscribeToRoom('cocina');
     this.subscribeToRoom('cuarto');
     this.subscribeToRoom('sala');

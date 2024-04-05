@@ -8,11 +8,11 @@
 
 <ion-content class="ion-padding">
   <div class="room-container">
+    <div class="room" [ngClass]="{'room-on': Garaje, 'room-off': !Garaje}">
+      <p>Garaje</p>
+    </div>
     <div class="room" [ngClass]="{'room-on': banio, 'room-off': !banio}">
       <p>Baño</p>
-    </div>
-    <div class="room" [ngClass]="{'room-on': garaje, 'room-off': !garaje}">
-      <p>Garaje</p>
     </div>
     <div class="room" [ngClass]="{'room-on': cocina, 'room-off': !cocina}">
       <p>Cocina</p>
